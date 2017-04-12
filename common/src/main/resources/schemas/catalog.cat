@@ -1,0 +1,2 @@
+OVERRIDE no
+PUBLIC "http://greatorex.me.uk/jaxb-visitor-test/common" "maven:uk.me.greatorex:jaxb-visitor-test-common:jar::!/schemas/common.xsd"

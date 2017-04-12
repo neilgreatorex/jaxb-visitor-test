@@ -35,6 +35,17 @@
                 </executions>
                 <configuration>
                     <schemaDirectory>src/main/resources/schemas</schemaDirectory>
+                    <catalogs>
+                        <catalog>
+                            <dependencyResource>
+                                <groupId>uk.me.greatorex</groupId>
+                                <artifactId>jaxb-visitor-test-common</artifactId>
+                                <version>${project.version}</version>
+                                <resource>schemas/catalog.cat</resource>
+                            </dependencyResource>
+                        </catalog>
+                    </catalogs>
+                    <strict>false</strict>
                     <args>
                         <arg>-extension</arg>
                         <arg>-Xinheritance</arg>

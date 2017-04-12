@@ -13,4 +13,9 @@
             <xjc:simple/>
         </jaxb:globalBindings>
     </jaxb:bindings>
+    <jaxb:bindings xmlns:tns="http://greatorex.me.uk/jaxb-visitor-test/common" scd="x-schema::tns">
+        <jaxb:bindings scd="~tns:data">
+            <jaxb:class ref="uk.me.greatorex.jaxbvisitor.common.generated.Data"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
 </jaxb:bindings>
