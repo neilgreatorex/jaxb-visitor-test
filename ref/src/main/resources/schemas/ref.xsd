@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+            jaxb:version="2.1">
+    <xsd:complexType name="data">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <jaxb:class ref="uk.me.greatorex.jaxbvisitor.common.generated.Data"/>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:complexType>
+
+    <xsd:element name="processData">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="data" type="data" minOccurs="1" maxOccurs="1"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
